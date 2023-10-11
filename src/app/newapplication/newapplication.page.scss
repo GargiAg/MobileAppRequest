@@ -1,0 +1,105 @@
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ion-header ion-title {
+    text-align: center;
+    padding-right: 1.3rem;
+}
+
+ion-content {
+    --overflow: hidden;
+}
+
+.back {
+    color: black;
+    --ripple-color: transparent;
+}
+
+.back:hover {
+    color: gray;
+}
+
+ion-header {
+    display: flex;
+    flex-direction: row;
+}
+
+ion-toolbar {
+    --min-height: none !important;
+}
+
+
+.submit-button2 {
+
+    --background: linear-gradient(180deg, #1D4559 0%, #0F374A 100%);
+
+}
+
+ion-select {
+    font-size: 20px;
+}
+
+ion-input {
+    font-size: 20px;
+}
+
+form {
+    padding-right: 1rem !important;
+}
+
+
+.wrapper {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-top: 0.5rem;
+
+
+    .file-upload {
+
+        height: 95px;
+        width: 200px;
+        position: relative;
+        overflow: hidden;
+        background-image: url(../../assets/icon/input-img.svg);
+        background-size: 108% 115%;
+
+
+
+        input[type='file'] {
+
+
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            cursor: pointer;
+
+        }
+    }
+}
+
+ion-item {
+    --background: transparent;
+}
+
+ion-select::part(placeholder) {
+    font-size: 12px !important;
+    padding-top: 1rem !important;
+    padding-bottom: 0.5rem !important;
+}
+
+ion-select::part(text) {
+    color: #4682B4;
+    font-size: 12px !important;
+    padding-top: 1rem !important;
+    padding-bottom: 0.5rem !important;
+}

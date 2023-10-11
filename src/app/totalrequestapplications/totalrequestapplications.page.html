@@ -1,0 +1,237 @@
+<ion-content>
+  <ion-header>
+    <ion-button class="last" fill="clear" (click)="dashboard()">
+      <ion-icon name="chevron-back-outline"></ion-icon>
+    </ion-button>
+    <ion-title>
+      Total Request Applications
+    </ion-title>
+
+  </ion-header>
+
+  <ion-grid>
+
+    <ion-row>
+      <ion-col>
+        <ion-segment class="custom-label" [(ngModel)]="segmentV">
+          <ion-segment-button value="total">
+            Total
+          </ion-segment-button>
+          <ion-segment-button value="Pending">
+            Pending
+          </ion-segment-button>
+          <ion-segment-button value="Approved">
+            Approved
+          </ion-segment-button>
+        </ion-segment>
+      </ion-col>
+    </ion-row>
+
+    <section class="description">
+      <ion-row [ngSwitch]="segmentV">
+        <ion-col class="headings" *ngSwitchCase="'total'">
+          Abc App
+
+          <ion-card>
+            <ion-card-content class="cardes">
+              <ion-list>
+                <ion-row class="row-group">
+                  <ion-col size="6">Category</ion-col>
+                  <ion-col size="6">APIs</ion-col>
+                  <ion-col size="6" class="makeboldtext">Established Fact</ion-col>
+                  <ion-col size="6" class="makeboldtext">Finibus Bonorum</ion-col>
+                </ion-row>
+                <ion-row clas="row-group">
+                  <ion-col size="6">No. of Pages</ion-col>
+                  <ion-col size="6">Scope of Work</ion-col>
+                  <ion-col size="6" class="makeboldtext">12</ion-col>
+                  <ion-col size="6">
+                    <ion-button class="pdf-icon" fill="clear" href="../../assets/Document1.pdf">
+                      <img src="../../assets/icon/download pdf.svg" alt="Download PDF icon">
+                    </ion-button>
+                    <!-- <p>Download PDF</p> -->
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col size="6">Contact Person</ion-col>
+                  <ion-col size="6">Email</ion-col>
+                  <ion-col size="6" class="makeboldtext">Arvind Singh</ion-col>
+                  <ion-col size="6" class="makeboldtext">arvind.singh@gmail.com</ion-col>
+                </ion-row>
+              </ion-list>
+            </ion-card-content>
+          </ion-card>
+          Xyz App
+
+          <ion-card>
+            <ion-card-content class="cardes">
+              <ion-list>
+                <ion-row class="row-group">
+                  <ion-col size="6">Category</ion-col>
+                  <ion-col size="6">APIs</ion-col>
+                  <ion-col size="6" class="makeboldtext">Established Fact</ion-col>
+                  <ion-col size="6" class="makeboldtext">Finibus Bonorum</ion-col>
+                </ion-row>
+                <ion-row clas="row-group">
+                  <ion-col size="6">No. of Pages</ion-col>
+                  <ion-col size="6">Scope of Work</ion-col>
+                  <ion-col size="6" class="makeboldtext">12</ion-col>
+                  <ion-col size="6"> <ion-button class="pdf-icon" fill="clear" href="../../assets/Document1.pdf">
+                      <img src="../../assets/icon/download pdf.svg" alt="Download PDF icon">
+                    </ion-button></ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col size="6">Contact Person</ion-col>
+                  <ion-col size="6">Email</ion-col>
+                  <ion-col size="6" class="makeboldtext">Arvind Singh</ion-col>
+                  <ion-col size="6" class="makeboldtext">arvind.singh@gmail.com</ion-col>
+                </ion-row>
+              </ion-list>
+            </ion-card-content>
+          </ion-card>
+          Pqr App
+
+          <ion-card>
+            <ion-card-content class="cardes">
+              <ion-list>
+                <ion-row class="row-group">
+                  <ion-col size="6">Category</ion-col>
+                  <ion-col size="6">APIs</ion-col>
+                  <ion-col size="6" class="makeboldtext">Established Fact</ion-col>
+                  <ion-col size="6" class="makeboldtext">Finibus Bonorum</ion-col>
+                </ion-row>
+                <ion-row clas="row-group">
+                  <ion-col size="6">No. of Pages</ion-col>
+                  <ion-col size="6">Scope of Work</ion-col>
+                  <ion-col size="6" class="makeboldtext">12</ion-col>
+                  <ion-col size="6"><ion-button class="pdf-icon" fill="clear" href="../../assets/Document1.pdf">
+                      <img src="../../assets/icon/download pdf.svg" alt="Download PDF icon">
+                    </ion-button>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col size="6">Contact Person</ion-col>
+                  <ion-col size="6">Email</ion-col>
+                  <ion-col size="6" class="makeboldtext">Arvind Singh</ion-col>
+                  <ion-col size="6" class="makeboldtext">arvind.singh@gmail.com</ion-col>
+                </ion-row>
+              </ion-list>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row [ngSwitch]="segmentV">
+        <ion-col class="headings" *ngSwitchCase="'Pending'">
+          Abc App
+
+          <ion-card>
+            <ion-card-content class="cardes">
+              <ion-list>
+                <ion-row class="row-group">
+                  <ion-col size="6">Category</ion-col>
+                  <ion-col size="6">APIs</ion-col>
+                  <ion-col size="6" class="makeboldtext">Established Fact</ion-col>
+                  <ion-col size="6" class="makeboldtext">Finibus Bonorum</ion-col>
+                </ion-row>
+                <ion-row clas="row-group">
+                  <ion-col size="6">No. of Pages</ion-col>
+                  <ion-col size="6">Scope of Work</ion-col>
+                  <ion-col size="6" class="makeboldtext">12</ion-col>
+                  <ion-col size="6">
+                    <ion-button class="pdf-icon" fill="clear" href="../../assets/Document1.pdf">
+                      <img src="../../assets/icon/download pdf.svg" alt="Download PDF icon">
+                    </ion-button>
+                    <!-- <p>Download PDF</p> -->
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col size="6">Contact Person</ion-col>
+                  <ion-col size="6">Email</ion-col>
+                  <ion-col size="6" class="makeboldtext">Arvind Singh</ion-col>
+                  <ion-col size="6" class="makeboldtext">arvind.singh@gmail.com</ion-col>
+                </ion-row>
+              </ion-list>
+            </ion-card-content>
+          </ion-card>
+
+          Xyz App
+
+          <ion-card>
+            <ion-card-content class="cardes">
+              <ion-list>
+                <ion-row class="row-group">
+                  <ion-col size="6">Category</ion-col>
+                  <ion-col size="6">APIs</ion-col>
+                  <ion-col size="6" class="makeboldtext">Established Fact</ion-col>
+                  <ion-col size="6" class="makeboldtext">Finibus Bonorum</ion-col>
+                </ion-row>
+                <ion-row clas="row-group">
+                  <ion-col size="6">No. of Pages</ion-col>
+                  <ion-col size="6">Scope of Work</ion-col>
+                  <ion-col size="6" class="makeboldtext">12</ion-col>
+                  <ion-col size="6"> <ion-button class="pdf-icon" fill="clear" href="../../assets/Document1.pdf">
+                      <img src="../../assets/icon/download pdf.svg" alt="Download PDF icon">
+                    </ion-button></ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col size="6">Contact Person</ion-col>
+                  <ion-col size="6">Email</ion-col>
+                  <ion-col size="6" class="makeboldtext">Arvind Singh</ion-col>
+                  <ion-col size="6" class="makeboldtext">arvind.singh@gmail.com</ion-col>
+                </ion-row>
+              </ion-list>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row [ngSwitch]="segmentV">
+        <ion-col class="headings" *ngSwitchCase="'Approved'">
+          Pqr App
+
+          <ion-card>
+            <ion-card-content class="cardes">
+              <ion-list>
+                <ion-row class="row-group">
+                  <ion-col size="6">Category</ion-col>
+                  <ion-col size="6">APIs</ion-col>
+                  <ion-col size="6" class="makeboldtext">Established Fact</ion-col>
+                  <ion-col size="6" class="makeboldtext">Finibus Bonorum</ion-col>
+                </ion-row>
+                <ion-row clas="row-group">
+                  <ion-col size="6">No. of Pages</ion-col>
+                  <ion-col size="6">Scope of Work</ion-col>
+                  <ion-col size="6" class="makeboldtext">12</ion-col>
+                  <ion-col size="6"><ion-button class="pdf-icon" fill="clear" href="../../assets/Document1.pdf">
+                      <img src="../../assets/icon/download pdf.svg" alt="Download PDF icon">
+                    </ion-button>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col size="6">Contact Person</ion-col>
+                  <ion-col size="6">Email</ion-col>
+                  <ion-col size="6" class="makeboldtext">Arvind Singh</ion-col>
+                  <ion-col size="6" class="makeboldtext">arvind.singh@gmail.com</ion-col>
+                </ion-row>
+              </ion-list>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+      </ion-row>
+    </section>
+  </ion-grid>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title><ion-button expand="full" class="submit-button">Submit
+
+      </ion-button>
+
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>

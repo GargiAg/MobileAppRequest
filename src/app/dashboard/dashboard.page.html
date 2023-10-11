@@ -1,0 +1,93 @@
+<ion-content fullscreen="true">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Dashboard
+
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-grid class="main-content">
+    <section class="boxes">
+
+      <ion-row class="boxes-cont">
+        <ion-col class="bgs" id="bg1">
+
+          <section class="cont">
+
+            <div class="eclipse" style="background-color: 
+              #047D81;">
+              <img src="../../assets/icon/front-symbol.svg" alt="icon">
+            </div>
+
+            <div>
+              <h1>482</h1>
+              <h6>
+                <hr>Total Applications
+              </h6>
+            </div>
+
+            <div> <ion-button class="next" fill="clear" (click)="totalrequestapplications()">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </ion-button>
+            </div>
+
+          </section>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="boxes-cont">
+        <ion-col class="bgs" id="bg2">
+          <section class="cont">
+
+            <div class="eclipse" style="background-color: #83530B;">
+              <img src="../../assets/icon/front-symbol2.svg" alt="icon">
+            </div>
+            <div>
+              <h1>256</h1>
+              <p id="twopara">
+                Approved Appplications
+              </p>
+            </div>
+            <div> <ion-button class="next" fill="clear">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </ion-button></div>
+          </section>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="boxes-cont">
+        <ion-col class="bgs" id="bg3">
+          <section class="cont">
+
+            <div class="eclipse" style="background-color:#5E7A0D;">
+              <img src="../../assets/icon/front-symbol3.svg" alt="icon">
+            </div>
+
+            <div>
+              <h1>226</h1>
+              <p id="threepara">
+                Pending Applications
+              </p>
+            </div>
+            <div> <ion-button class="next" fill="clear">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </ion-button></div>
+          </section>
+        </ion-col>
+      </ion-row>
+    </section>
+
+  </ion-grid>
+</ion-content>
+<ion-footer translucent="true">
+  <ion-toolbar>
+    <ion-title> <ion-button expand="full" class="new-request" (click)="newapplication()">Request New
+        Application
+        <!-- <ion-icon name=" chevron-forward-outline"></ion-icon> -->
+      </ion-button></ion-title>
+  </ion-toolbar>
+</ion-footer>

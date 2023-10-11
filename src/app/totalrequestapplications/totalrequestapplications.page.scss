@@ -1,0 +1,93 @@
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ion-header ion-title {
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.last {
+    padding-left: 0.8rem;
+    color: black;
+    --ripple-color: transparent;
+}
+
+.last:hover {
+    color: gray;
+}
+
+ion-header {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ion-label {
+    text-transform: capitalize;
+}
+
+
+ion-segment-button {
+    --background-hover: rgba(59, 89, 153, 0.04);
+    --color-activated: rgba(27, 212, 211, 1);
+    --color-checked: rgba(27, 212, 211, 1);
+}
+
+ion-toolbar {
+    --min-height: none !important;
+}
+
+.description {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
+
+.heading1 {
+    padding-bottom: 0.3rem;
+}
+
+.headings {
+    padding-bottom: 0.3rem;
+    padding-top: 0.6rem;
+}
+
+.submit-button {
+    --background: linear-gradient(180deg, #1D4559 0%, #0F374A 100%);
+}
+
+.cardes {
+    padding: 0.5rem;
+    color: black;
+    font-size: 12px;
+}
+
+.makeboldtext {
+    font-weight: bold;
+}
+
+.row-group {
+    padding-bottom: 1rem;
+}
+
+.pdf-icon {
+    --ripple-color: gray;
+}
+
+
+ion-button::part(native) {
+    padding: 0;
+}
+
+ion-card:nth-last-child(-n+1) {
+    margin-bottom: 1rem;
+}
+
+ion-card {
+    margin-bottom: 1rem;
+    margin-top: 0.4rem;
+}

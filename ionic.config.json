@@ -1,0 +1,7 @@
+{
+  "name": "MobileAppRequest",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

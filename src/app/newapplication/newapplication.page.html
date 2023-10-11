@@ -1,0 +1,56 @@
+<ion-content>
+  <ion-header>
+    <ion-button class="back" fill="clear" (click)="dashboard()">
+      <ion-icon name="chevron-back-outline">
+      </ion-icon>
+    </ion-button>
+    <ion-title>
+      New Application
+    </ion-title>
+  </ion-header>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <form action="">
+          <ion-item>
+            <ion-input class="custom-inp" [clearInput]="true" label="Mobile App Name" labelPlacement="stacked"
+              placeholder="Enter Mobile No" name="name" [(ngModel)]="formData.name"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-select class="custom-inp" label="Category" placeholder="Select Category" label-placement="stacked">
+              <ion-select-option value="Category1">Category1</ion-select-option>
+              <ion-select-option value="Category2">Category2</ion-select-option>
+              <ion-select-option value="Category3">Category3</ion-select-option>
+            </ion-select></ion-item>
+          <ion-item><ion-select class="custom-inp" label="APIs" placeholder="Select Category" label-placement="stacked">
+              <ion-select-option value="Category1">Category1</ion-select-option>
+              <ion-select-option value="Category2">Category2</ion-select-option>
+              <ion-select-option value="Category3">Category3</ion-select-option>
+            </ion-select></ion-item>
+          <ion-item><ion-input class="custom-inp" [clearInput]=" true" label="Number of pages" labelPlacement="stacked"
+              placeholder="Enter number of pages"></ion-input></ion-item>
+          <ion-item>
+            <div class="wrapper">
+              <div class="file-upload">
+                <label for="file-upload">Scope of work</label>
+                <input type="file" placeholder="Upload Scope of work" />
+                <i class="fa fa-arrow-up"></i>
+              </div>
+            </div>
+          </ion-item>
+          <ion-item><ion-input class="custom-inp" [clearInput]=" true" label="Contact Person" labelPlacement="stacked"
+              placeholder="Enter your name"></ion-input></ion-item>
+          <ion-item><ion-input class="custom-inp" [clearInput]=" true" label="Email" labelPlacement="stacked"
+              placeholder="Enter your email address"> </ion-input> </ion-item>
+        </form>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<ion-footer translucent="true">
+  <ion-toolbar>
+    <ion-title> <ion-button expand="full" class="submit-button2" (click)="totalrequestapplications()"> Submit
+        <!-- <ion-icon name=" chevron-forward-outline"></ion-icon> -->
+      </ion-button></ion-title>
+  </ion-toolbar>
+</ion-footer>
